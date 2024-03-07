@@ -15,4 +15,4 @@ This is small project that contains basic CLI based calculation. This calculator
 
 View Demo: [Visit linkedin](https://linkedin.com/in/sarfarazunar)
 
- *** More projects are coming soon!
+ *** More projects are coming soon! ***
