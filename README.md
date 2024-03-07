@@ -1,8 +1,8 @@
 Assalam u alaikum here is some project created by me during Cloud, GenerativeAI Engineer course at Governor House Sindh Pakistan
 
-###Projects
+### Projects
 <hr />
-##Calculator
+## Calculator
 This is small project that contains basic CLI based calculation. This calculator contains:
 * Standard Calculation
 * Percentage Calculator
