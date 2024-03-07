@@ -2,13 +2,16 @@ Assalam u alaikum here is some project created by me during Cloud, GenerativeAI 
 
 ### Projects
 <hr />
+
 ## Calculator
 This is small project that contains basic CLI based calculation. This calculator contains:
-* Standard Calculation
-* Percentage Calculator
-** Percentage to Value
-** Value to Percentage
-* Date Difference Calculator
+<ul>
+<li> Standard Calculation</li>
+<li> Percentage Calculator</li>
+<li> Percentage to Value</li>
+<li> Value to Percentage</li>
+<li> Date Difference Calculator</li>
+</ul>
 
 View Demo: [Visit linkedin](https://linkedin.com/in/sarfarazunar)
 
