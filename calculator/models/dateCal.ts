@@ -27,7 +27,7 @@ const compareDate = async () => {
 
         let years: number = date2.getFullYear() - date1.getFullYear();//Getting Years
         let months: number = date2.getMonth() - date1.getMonth(); //getting months
-        let days: number = date2.getDay() - date1.getDay(); //Getting Days
+        let days: number = date2.getDate() - date1.getDate(); //Getting Dates
         
         console.log(chalk.bold.blue(`The difference between dates is${chalk.green(years)} years, ${chalk.green(months)} months, ${chalk.green(days)} days.`))
 
