@@ -45,6 +45,7 @@ This is CLI Todo list app project created with typescript. This todolist project
 View Demo: [Visit Demo](https://www.linkedin.com/posts/sarfarazunar_projects-governorinitiative-awamigovernorkamrantessori-activity-7174356739754999808-kt6U)
  *** More projects are coming soon! ***
  <hr />
+ 
 # Get Start
 Clone this github repository
 ```
