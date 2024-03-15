@@ -43,7 +43,9 @@ This is CLI Todo list app project created with typescript. This todolist project
 </ul>
 
 View Demo: [Visit Demo](https://www.linkedin.com/posts/sarfarazunar_projects-governorinitiative-awamigovernorkamrantessori-activity-7174356739754999808-kt6U)
+
  *** More projects are coming soon! ***
+ 
  <hr />
  
 # Get Start
@@ -62,4 +64,5 @@ cd .\[projectname]\
 Open Terminal and type `tsc -w` and then open command prompt and run `node app.js` or `node main.js` based on project. 
 
 **Give a star to this repo!**
+**Thanks For Reading about my projects!**
 
