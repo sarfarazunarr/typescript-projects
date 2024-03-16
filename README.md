@@ -49,7 +49,7 @@ Here is simple currency converter that convert currency from one to another curr
 <ul>
 <li> Get Currency Code against Currency Name</li>
 <li> Get Conversion Details</li>
-<li> <b> Result may be so accurate because of using free tier </b></li>
+<li> <b> Result may be not be so accurate because of using free tier </b></li>
 </ul>
 
 View Demo: [Watch Video](https://www.linkedin.com/posts/sarfarazunar_typescript-projects-currency-activity-7174655313810235392-WkGK?)
