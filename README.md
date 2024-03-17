@@ -54,6 +54,17 @@ Here is simple currency converter that convert currency from one to another curr
 
 View Demo: [Watch Video](https://www.linkedin.com/posts/sarfarazunar_typescript-projects-currency-activity-7174655313810235392-WkGK?)
 
+
+## Word Counter
+Here is simple word and characters counter cli app.
+<ul>
+<li> Count Number of Words in a paragraph</li>
+<li> Count Number of characters in paragraph</li>
+<li> Get Expected Reading Time</li>
+</ul>
+
+View Demo: [Watch Video](https://www.linkedin.com/posts/sarfarazunar_typescript-projects-word-activity-7174957812358254592-rUWc)
+
  *** More projects are coming soon! ***
  
  <hr />
