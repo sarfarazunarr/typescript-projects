@@ -13,10 +13,15 @@ This is small project that contains basic CLI based calculation. This calculator
 <li> Date Difference Calculator</li>
 </ul>
 
+Run it on your terminal ``` npx multimode_calculator ```
+
 View Demo: [Watch Video](https://www.linkedin.com/posts/sarfarazunar_typescript-governorsindh-projects-activity-7171425532675309570-v6po)
 
 ## Number Guessing Game
 This is small CLI number guessing game where user can play number guessing game. This project is created with chalk, inquirer, typescript and NodeJs.
+
+Run it on your terminal ``` npx @sarfarazunarr/guess-the-number ```
+
 View Demo: [Watch Video](https://www.linkedin.com/posts/sarfarazunar_assalam-u-alaikum-friends-here-is-project-activity-7172490064566988800-MVJi)
 
 ## ATM

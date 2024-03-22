@@ -1,9 +1,11 @@
+#!/usr/bin/env node
+
 import inquirer from 'inquirer'
 import chalk from 'chalk'
 import guessNumber from './guessNumber.js'; //module for handling number checking and generating
 
 //Create Number guessing game
-console.log(chalk.yellow.bold(`\n\tWelcome to Number Guessing Game! \t\t`));
+console.log(chalk.yellow.bold(`\n\tWelcome to "Guess The Number" Game! \t\t`));
 console.log(chalk.blue("\tYou have 10 attempts!"))
 console.log(chalk.yellow(`-`.repeat(50)));
 
