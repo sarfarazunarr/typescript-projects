@@ -1,11 +1,14 @@
 {
-  "name": "atm",
+  "name": "alfaraz-atm",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is basic atm project!",
   "main": "main.ts",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "alfaraz-atm": "main.js"
   },
   "author": "",
   "license": "ISC",
