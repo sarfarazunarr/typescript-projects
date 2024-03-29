@@ -1,6 +1,6 @@
 {
   "name": "alfaraz-atm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is basic atm project!",
   "main": "main.ts",
   "type": "module",
