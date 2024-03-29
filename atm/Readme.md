@@ -10,6 +10,7 @@ This is basic cli based atm project that contains some basic functions:
 
 ### Dev Details
 This is currently storing temporary data in arrays in next version we will add file system to store permenant data.
-Thanks
+Thanks!
 
-*** Created During the course of TypeScript at Governor Karman Tissori Initiative during Certified Cloud Applied AI Engineer GenAI, Blockchain and Web 3.O Initiative.
+
+*** Created During the course of TypeScript at Governor Karman Tissori Initiative during Certified Cloud Applied AI Engineer GenAI, Blockchain and Web 3.O Initiative. ***

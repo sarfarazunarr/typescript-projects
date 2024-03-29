@@ -4,8 +4,15 @@ import inquirer from "inquirer";
 import accounts from "./db/accounts.js";
 import blocked from "./db/blocked.js";
 import Transactionhistory from "./db/history.js";
+import open from "open";
 
 console.log(chalk.green("Welcome to Faraz ATM!"));
+
+let {ask} = await inquirer.prompt({name: 'ask', type: "confirm", message: "Wants to view sample data: "})
+if(ask){
+    open('https://raw.githubusercontent.com/sarfarazunarr/typescript-projects/main/atm/db/accounts.ts')
+}
+
 
 let userid = await inquirer.prompt([
     {

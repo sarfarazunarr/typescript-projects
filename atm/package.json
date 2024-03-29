@@ -1,6 +1,6 @@
 {
   "name": "alfaraz-atm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is basic atm project!",
   "main": "main.ts",
   "type": "module",
@@ -15,7 +15,8 @@
   "dependencies": {
     "chalk": "^5.3.0",
     "inquirer": "^9.2.15",
-    "json-parser": "^3.1.2"
+    "json-parser": "^3.1.2",
+    "open": "^10.1.0"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
