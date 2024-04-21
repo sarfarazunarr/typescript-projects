@@ -1,11 +1,14 @@
 {
-  "name": "currencyconvertor",
-  "version": "1.0.0",
+  "name": "farazcurrencies",
+  "version": "1.0.3",
   "description": "",
-  "main": "./main.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
+  },
+  "bin": {
+    "currencyconvertor": "main.js"
   },
   "keywords": [],
   "author": "",

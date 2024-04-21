@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
 import getCode from "./modes/currencyCode.js";
 import convert from "./modes/currencyConvert.js";
