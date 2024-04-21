@@ -9,7 +9,7 @@ async function createTask(data?: {}) {
             const taskContent = readTasks();
             taskContent.push(data);
 
-            fs.writeFileSync('./task/taskData.json', JSON.stringify(taskContent, null, 2));
+            fs.writeFileSync('./taskData.json', JSON.stringify(taskContent, null, 2));
             return ('done');
         }
         let taskInfo = await inquirer.prompt([
@@ -35,7 +35,7 @@ async function createTask(data?: {}) {
         const taskContent = readTasks();
         taskContent.push(newTask);
 
-        fs.writeFileSync('./task/taskData.json', JSON.stringify(taskContent, null, 2));
+        fs.writeFileSync('./taskData.json', JSON.stringify(taskContent, null, 2));
         console.log(chalk.green('Task has been saved!'))
     } catch (error) {
         console.log(chalk.red('Failed to create Task!'))

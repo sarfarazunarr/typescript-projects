@@ -17,7 +17,7 @@ async function deleteTask() {
     if (taskIndex !== -1) {
         tasks.splice(tasks[taskIndex], 1);
         try {
-            fs.writeFileSync('./task/taskData.json', JSON.stringify(tasks, null, 2));
+            fs.writeFileSync('./taskData.json', JSON.stringify(tasks, null, 2));
             console.log('Task deleted successfully!');
         } catch (error) {
             console.error('Error deleting to file:', error);

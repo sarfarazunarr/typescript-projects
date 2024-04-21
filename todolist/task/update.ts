@@ -28,7 +28,7 @@ async function updateStatus() {
     if (taskIndex !== -1) {
         tasks[taskIndex].status = task.status;
         try {
-            fs.writeFileSync('./task/taskData.json', JSON.stringify(tasks, null, 2));
+            fs.writeFileSync('./taskData.json', JSON.stringify(tasks, null, 2));
             console.log('Task updated successfully!');
         } catch (error) {
             console.error('Error writing to file:', error);

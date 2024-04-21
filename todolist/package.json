@@ -4,17 +4,21 @@
     "inquirer": "^9.2.15"
   },
   "name": "@sarfarazunarr/todolist",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "app.js",
   "type": "module",
+  "files": ["taskData.json"],
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20.11.26"
   },
+  "bin": {
+    "todolist": "app.js"
+  },
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
+  "author": "Sarfaraz",
   "license": "ISC",
-  "description": ""
+  "description": "This is best todolist app for you!"
 }
