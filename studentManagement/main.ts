@@ -72,7 +72,7 @@ class studentManagement {
         console.log(chalk.yellow("Student Name: ") + student.name);
         console.log(chalk.yellow("Student ID: ") + student.id);
         console.log(chalk.yellow("Course Name: ") + student.courseName);
-        console.log(chalk.yellow("Balance: ") + student.balance);
+        console.log(chalk.yellow(student.balance ? `Student Balance (Fee to Paid): ${student.balance}` : "All Tution Fee Paid!"));
     }
 
     viewBalance() {
