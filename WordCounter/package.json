@@ -7,14 +7,17 @@
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20.11.28"
   },
-  "name": "wordcounter",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "farazwordcounter",
+  "version": "1.0.1",
+  "main": "main.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "farazwordcounter": "main.js"
   },
-  "author": "",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Sarfaraz Unar",
   "license": "ISC",
-  "description": ""
+  "description": "This is simple word counter that will help you to count words in a specific paragraph and also tell you number or characters and reading time!"
 }

@@ -1,7 +1,7 @@
 {
   "name": "farazstudentmanagement",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Simple CLI Based Student Management System!",
   "main": "main.js",
   "type": "module",
   "bin": {
@@ -80,6 +80,6 @@
   "scripts": {
     "start": "node main.js"
   },
-  "author": "",
+  "author": "studentmanagement",
   "license": "ISC"
 }

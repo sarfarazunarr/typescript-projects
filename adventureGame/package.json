@@ -1,0 +1,25 @@
+{
+  "name": "faraz-adventure",
+  "version": "1.0.0",
+  "description": "This is simple adventure game that will give you a bit of fun!",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "keywords": [
+    "adventure",
+    "game"
+  ],
+  "author": "Sarfaraz Unar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.20"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "nodemon": "^3.1.0"
+  }
+}
