@@ -4,8 +4,11 @@
   "description": "This is simple adventure game that will give you a bit of fun!",
   "main": "main.js",
   "type": "module",
+  "bin": {
+    "faraz-adventure": "main.js"
+  },
   "scripts": {
-    "start": "nodemon main.js"
+    "start": "node main.js"
   },
   "keywords": [
     "adventure",

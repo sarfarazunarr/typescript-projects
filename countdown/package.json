@@ -1,11 +1,14 @@
 {
   "name": "faraz-countdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is countdown timer created just for you!",
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "test": "node main.js"
+    "start": "node main.js"
+  },
+  "bin": {
+    "faraz-countdown": "main.js"
   },
   "keywords": [
     "countdown",
