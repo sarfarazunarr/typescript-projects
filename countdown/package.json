@@ -1,0 +1,23 @@
+{
+  "name": "faraz-countdown",
+  "version": "1.0.0",
+  "description": "This is countdown timer created just for you!",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "keywords": [
+    "countdown",
+    "timer"
+  ],
+  "author": "Sarfaraz Unar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.12.8"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.20"
+  }
+}
