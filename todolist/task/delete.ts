@@ -3,7 +3,7 @@ import inquirer from "inquirer";
 import readTasks from "./view.js";
 
 async function deleteTask() {
-    const tasks = await readTasks();
+    const tasks = readTasks() || [];
     let task = await inquirer.prompt([
         {
             name: "name",
@@ -13,15 +13,10 @@ async function deleteTask() {
         }
     ]);
     
-    const taskIndex = tasks.findIndex((taskdata:{title:string}) => taskdata.title === task.name);
+    const taskIndex:number = tasks.findIndex((taskdata:{title:string}) => taskdata.title === task.name);
     if (taskIndex !== -1) {
-        tasks.splice(tasks[taskIndex], 1);
-        try {
-            fs.writeFileSync('./taskData.json', JSON.stringify(tasks, null, 2));
+        tasks.splice(taskIndex, 1);
             console.log('Task deleted successfully!');
-        } catch (error) {
-            console.error('Error deleting to file:', error);
-        }
     } else {
         console.log('Task not found!');
     }

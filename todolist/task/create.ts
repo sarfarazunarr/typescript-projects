@@ -1,15 +1,12 @@
-import * as fs from 'fs';
 import readTasks from './view.js';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 
-async function createTask(data?: {}) {
+async function createTask(data?: { title: string, description: string, status: string, completed: boolean }) {
     try {
         if (data) {
-            const taskContent = readTasks();
+            const taskContent = readTasks() || [];
             taskContent.push(data);
-
-            fs.writeFileSync('./taskData.json', JSON.stringify(taskContent, null, 2));
             return ('done');
         }
         let taskInfo = await inquirer.prompt([
@@ -29,13 +26,10 @@ async function createTask(data?: {}) {
             title: taskInfo.title,
             description: taskInfo.description,
             status: 'Pending',
-            date: new Date(Date.now()),
         };
 
-        const taskContent = readTasks();
-        taskContent.push(newTask);
-
-        fs.writeFileSync('./taskData.json', JSON.stringify(taskContent, null, 2));
+        const taskContent = readTasks() || [];
+        taskContent.push({title: newTask.title, description: newTask.description, status: newTask.status, completed: false});
         console.log(chalk.green('Task has been saved!'))
     } catch (error) {
         console.log(chalk.red('Failed to create Task!'))

@@ -1,18 +1,16 @@
 import chalk from 'chalk';
-import * as fs from 'fs';
+import data from '../taskData.js';
+
 
 function readTasks() {
-  const taskContent = fs.readFileSync('./taskData.json', 'utf-8');
   try {
-    const taskData = JSON.parse(taskContent);
-    return taskData;
-  } catch (error:any) {
-    if(error.message === 'Unexpected end of JSON input'){
-      fs.writeFileSync('./taskData.json', `[]`);
-      console.log(chalk.red('Try Again'))
-      readTasks()
+    if(data.length == 0){
+      console.log(chalk.red('No Task Found!'))
+      return []
     }
-    console.log(chalk.red(`Error parsing JSON file: ${error.message}`));
+    return data;
+  } catch (error:any) {
+    console.log(chalk.red(`Got Error: ${error.message}`));
   }
 }
 export default readTasks;

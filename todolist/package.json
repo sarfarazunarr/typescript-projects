@@ -7,7 +7,6 @@
   "version": "1.0.2",
   "main": "app.js",
   "type": "module",
-  "files": ["taskData.json"],
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20.11.26"

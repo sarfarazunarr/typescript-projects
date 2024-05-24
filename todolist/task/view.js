@@ -1,46 +1,15 @@
-"use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const chalk_1 = __importDefault(require("chalk"));
-const fs = __importStar(require("fs"));
+import chalk from 'chalk';
+import data from '../taskData.js';
 function readTasks() {
-    const taskContent = fs.readFileSync('./taskData.json', 'utf-8');
     try {
-        const taskData = JSON.parse(taskContent);
-        return taskData;
+        if (data.length == 0) {
+            console.log(chalk.red('No Task Found!'));
+            return [];
+        }
+        return data;
     }
     catch (error) {
-        if (error.message === 'Unexpected end of JSON input') {
-            fs.writeFileSync('./taskData.json', `[]`);
-            console.log(chalk_1.default.red('Try Again'));
-            readTasks();
-        }
-        console.log(chalk_1.default.red(`Error parsing JSON file: ${error.message}`));
+        console.log(chalk.red(`Got Error: ${error.message}`));
     }
 }
-exports.default = readTasks;
+export default readTasks;
